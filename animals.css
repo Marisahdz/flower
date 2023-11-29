@@ -1,0 +1,87 @@
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #ffffff;
+}
+.flower {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    transform: translate(-0%, -50%);
+}
+
+#hangman-image {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 50%; /* Center vertically */
+    left: 80%; /* Center horizontally */
+    transform: translate(-265%, -90%);
+}
+
+
+#hangman-container {
+    text-align: center;
+    margin-top: 200px
+}
+
+#word-display {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+#missed-letters {
+    margin-bottom: 10px;
+}
+
+#guess-input {
+    width: 30px;
+    text-align: center;
+    margin-right: 10px;
+}
+
+button {
+    padding: 5px 10px;
+    cursor: pointer;
+    background-color: #ff3b6d;
+    border: none;
+    border-radius: 12px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #fb0443;
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+
+  li {
+    float: left;
+  }
+
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+  li a:hover:not(.active) {
+    background-color: #d01750;
+  }
+
+  .active {
+    background-color: #f34a87;
+  }

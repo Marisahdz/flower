@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="span.css">
+        <title>Hangman Game</title>
+    </head>
+
+    <body>
+        <div class="flower">
+            <img src="flower1.png" alt="Banner" width="4000" height="360">
+        </div>
+
+
+        <div id="hangman-container">
+            <div id="word-display"></div>
+            <div id="missed-letters"></div>
+            <img id="hangman-image" src="images/Bflower_0.jpg" alt="Hangman Image">
+            <input type="text" id="guess-input" maxlength="1">
+            <button onclick="guessLetter()">Adivinar</button>
+            <button onclick="restartGame()">Reiniciar Juego</button>
+        </div>
+        <ul>
+            <li><a href="hangman.html">Random</a></li>
+            <li><a href="animals.html">Animals</a></li>
+            <li><a class="active" href="span.html">Spanish</a></li>
+          </ul>
+          <audio id="correctSound" src="correct.mp3" preload="auto"></audio>
+          <audio id="incorrectSound" src="wrong.mp3" preload="auto"></audio>
+
+        <script src="span.js"></script>
+    </body>
+
+</html>
